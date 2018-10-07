@@ -1,0 +1,28 @@
+package com.selenium.test;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
+
+public class CallIRlee {
+	Driver dr = new Driver();
+	WebDriver chrome = dr.getChome();
+	@BeforeSuite
+	public void homePage() {
+		chrome.navigate().to("https://www.irlee.info");
+		Thread.sleep(5000);
+		
+	}
+	
+	@Test
+	public void clickAddPost() {
+		
+		chrome.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		chrome.findElement(By.xpath("//*[@id=\"contentbody\"]/div/div/div[2]/div/div/h2/a")).click();
+		
+	}
+
+}

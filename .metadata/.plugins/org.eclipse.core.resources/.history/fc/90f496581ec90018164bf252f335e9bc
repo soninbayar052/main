@@ -1,0 +1,14 @@
+package com.selenium.test;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Driver {
+	
+	public WebDriver getChome() {
+	System.setProperty("webDriver.chrome.driver", "/Users/soninbayarmunkhbayar/");
+	WebDriver chrome = new ChromeDriver();
+	
+	return chrome;
+	}
+}

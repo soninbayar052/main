@@ -1,0 +1,8 @@
+package com.selenium.test;
+
+public class Driver {
+	
+	public WebDriver getChome() {
+	System.setProperty("webDriver.chrome.driver", "");
+	}
+}

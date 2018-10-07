@@ -1,0 +1,20 @@
+package com.selenium.test;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Driver {
+	
+	public WebDriver getChome() {
+	System.setProperty("webDriver.chrome.driver", "/Users/soninbayarmunkhbayar/eclipse-workspace/chromedriver");
+	//System.setProperty("webdriver.chrome.driver", "/Users/milanpatel/Documents/core/software/chromedriver-2");
+	WebDriver chrome = new ChromeDriver();
+	
+	return chrome;
+	}
+	
+	public WebDriver getFirefox() {
+		System.setProperty("webDriver.chrome.driver", "/Users/soninbayarmunkhbayar/eclipse-workspace/geckoDriver");
+		WebDriver firefox = new FirefoxDriver();
+	}
+}

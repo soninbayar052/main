@@ -1,0 +1,13 @@
+package com.selenium.test;
+
+import org.openqa.selenium.WebDriver;
+
+public class CallIRlee {
+	Driver dr = new Driver();
+	WebDriver chrome = dr.getChome();
+	
+	public void homePage() {
+		chrome.navigate().to("https://www.irlee.info");
+	}
+
+}
